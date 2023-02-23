@@ -10899,7 +10899,7 @@ bool SiCheckCurrentRegion(CEDAR *c, char *r)
 // Anyone, except Daiyuu Nobori, who understands and writes the C language
 // program can remove this restriction at his own risk.
 // 
-constexpr bool SiIsEnterpriseFunctionsRestrictedOnOpenSource(CEDAR *c)
+bool SiIsEnterpriseFunctionsRestrictedOnOpenSource(CEDAR *c)
 {
 	return false;
 }

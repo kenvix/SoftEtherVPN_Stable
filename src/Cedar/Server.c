@@ -10899,25 +10899,9 @@ bool SiCheckCurrentRegion(CEDAR *c, char *r)
 // Anyone, except Daiyuu Nobori, who understands and writes the C language
 // program can remove this restriction at his own risk.
 // 
-bool SiIsEnterpriseFunctionsRestrictedOnOpenSource(CEDAR *c)
+constexpr bool SiIsEnterpriseFunctionsRestrictedOnOpenSource(CEDAR *c)
 {
-	char region[128];
-	bool ret = false;
-	// Validate arguments
-	if (c == NULL)
-	{
-		return false;
-	}
-
-
-	SiGetCurrentRegion(c, region, sizeof(region));
-
-	if (StrCmpi(region, "JP") == 0 || StrCmpi(region, "CN") == 0)
-	{
-		ret = true;
-	}
-
-	return ret;
+	return false;
 }
 
 // Update the current region
